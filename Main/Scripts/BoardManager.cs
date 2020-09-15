@@ -85,12 +85,6 @@ public class BoardManager : MonoBehaviour
             return;
         }
 
-        //if (Chessmans[x, y].isWhite != isWhiteTurn)
-        //{
-        //    UIManager.Instance.DrawSidebar();
-            //return;
-        //}
-
 
         //Get all possible moves and instantiate objects to indicate them
         allowedMoves = Chessmans[x, y].PossibleMove();
