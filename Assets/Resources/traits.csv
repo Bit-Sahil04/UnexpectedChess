@@ -1,0 +1,8 @@
+name,threshold,Duration,Cooldown,SM StraightMove,CM CardinalMove,CA CardinalAttack,DM Diagonal Move,DA DiagonalAttack,CFA CardinalFlankAttack,DFA DiagonalFlankAttack,FA Straight Flank,CH Cardinal Hop,DH DiagonalHop
+Aggressive,-0.5,4,6,0,0,0,0,0,0,0,2,0,0
+Coward,-2,4,8,-1,0,0,0,0,0,0,0,0,0
+Excited,0.5,2,4,0,2,1,1,1,0,2,0,2,3
+Lazy,-1,4,4,0,-1,-2,-1,-2,-1,0,0,0,0
+Brave,1,6,8,2,2,1,0,0,0,0,0,0,0
+Dumb,-1,6,6,2,3,-3,2,-3,-3,-3,-2,2,2
+Cool,2,2,8,1,1,3,0,0,2,3,1,0,0

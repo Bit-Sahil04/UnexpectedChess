@@ -1,0 +1,5 @@
+- Free Low Poly Chess Set (Unity Asset Store)
+- Customizable Skybox (Unity Asset Store)
+- TSF Toon Shader (Unity Asset Store)
+- Font: Banquet (Dafont.com)
+- Font: Sigmar One (Google Fonts) - Vernon Adams
