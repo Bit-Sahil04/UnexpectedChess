@@ -301,7 +301,7 @@ public class BoardManager : MonoBehaviour
 
     }
 
-    //12-9-20: added a new field "name" of piece to spawn, this was required to fetch correct piece for UI
+   
     private void spawnChessman(int index, int x, int y, string _name)
     {
         // Spawn the object at index I facing towards orientation, then add it to active chessman list.
@@ -310,14 +310,13 @@ public class BoardManager : MonoBehaviour
         Chessmans[x, y].SetPosition(x, y);
         Chessmans[x, y]._name = _name;
 
-        //Assign 3 random traits to everyone
-        Chessmans[x, y].AddTrait(traitPreset.GetTrait(0));
-      //  for (int i = 0; i < 3; i++)
-      //  {
-      //      var t = traitPreset.GetTrait(UnityEngine.Random.Range(0, traitPreset.allTraits.Count - 1));
-      //      if (!Chessmans[x, y].traits.Contains(t))
-      //          Chessmans[x, y].AddTrait(t);
-      //  }
+        
+        for (int i = 0; i < 3; i++)
+        {
+            var t = traitPreset.GetTrait(UnityEngine.Random.Range(0, traitPreset.allTraits.Count - 1));
+            if (!Chessmans[x, y].traits.Contains(t))
+                Chessmans[x, y].AddTrait(t);
+        }
 
         if (Chessmans[x, y]._name == "White Knight" || Chessmans[x, y]._name == "White Bishop")
             go.transform.Rotate(Vector3.up, -180);
